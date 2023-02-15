@@ -8,6 +8,7 @@ public class Program {
 
     }
 
+
     static DeveloperFactory createDeveloperBySpeciality(String specialty) {
         if (specialty.equalsIgnoreCase("java")){
             return new JavaDeveloperFactory();
