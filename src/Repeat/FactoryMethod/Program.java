@@ -2,8 +2,8 @@ package Repeat.FactoryMethod;
 
 public class Program {
     public static void main(String[] args) {
-        DeveloperFactory developerFactory = createDeveloperBySpeciality("c++");
-        Developer developer = developerFactory.createDeveloper();
+        DeveloperFactory developerFactory = createDeveloperBySpeciality("c++");// <- new specialityFactory()
+        Developer developer = developerFactory.createDeveloper();// specialityFactory().createDeveloper();
 
         developer.writeCode();
     }
